@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #222635, #352a41);
+  color: white;
+}
+
+/* Card Container */
+#wrapper {
+  width: 420px;
+  padding: 30px;
+
+  background: rgba(97, 18, 18, 0.1);
+  backdrop-filter: blur(10px);
+
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+/* Description text */
+p {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #e0e0e0;
+}
+
+/* Guess label */
+#guess {
+  display: block;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Input box */
+#guessField {
+  width: 80%;
+  height: 45px;
+
+  border-radius: 8px;
+  border: none;
+
+  font-size: 20px;
+  text-align: center;
+
+  margin-bottom: 15px;
+}
+
+/* Input focus effect */
+#guessField:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(255,255,255,0.7);
+}
+
+/* Submit button */
+#subt {
+  width: 80%;
+  height: 45px;
+
+  border-radius: 8px;
+  border: none;
+
+  background: #ff7a18;
+  background: linear-gradient(45deg,#ff7a18,#ffb347);
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* Button hover */
+#subt:hover {
+  transform: scale(1.05);
+}
+
+/* Result area */
+.resultParas {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* Previous guesses */
+.guesses {
+  color: #ffd369;
+  font-weight: bold;
+}
+
+/* Remaining guesses */
+.lastResult {
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+/* High or low message */
+.lowOrHi {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*  js me button ko add karne ka  */
+#newGame {
+  margin-top: 20px;
+  padding: 10px 20px;
+
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+
+  background: #ff7a18;
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#newGame:hover {
+  transform: scale(1.05);
+}
