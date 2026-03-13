@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> learn js from chai aur code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const stop = document.querySelector("#stop");
+    const change = document.querySelector("h1");
+    const changeMe = setTimeout(function(){
+        change.innerHTML = "kuchh bhi nhi"
+    }, 2000)
+    stop.addEventListener("click", function(){
+        clearTimeout(changeMe)
+        console.log("stoped")
+    })
+</script>
+</html>
