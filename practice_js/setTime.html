@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> learn js from chai aur code</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+</body>
+<script>
+    const stop = document.querySelector("#stop");
+    const start = document.querySelector("#start");
+
+    let stopKr;
+    const stopMe = start.addEventListener("click", function(){
+        stopKr = setInterval(function(){
+            console.log("sab thik he")
+        }, 1000)
+    })
+
+    stop.addEventListener("click", function(){
+        clearInterval(stopKr);
+        console.log("stoped")
+    })
+</script>
+</html>
